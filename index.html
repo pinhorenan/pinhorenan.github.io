@@ -3,70 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Renan's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
-
-    <header>
-        <h1>Renan's Resume</h1>
-    </header>
-
-    <main>
-        <!-- Introduction/Summary Section -->
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <p>I am a dedicated Computer Science student at Universidade Federal de Pelotas seeking to leverage my skills and passion for technology to contribute to innovative projects in the field. With a strong foundation in computer science principles and a drive for continuous learning, I am eager to embark on my professional journey as a computer scientist.</p>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <strong>Bachelor of Science in Computer Science</strong><br>
-                    Universidade Federal de Pelotas (UFPel)<br>
-                    Expected Graduation: [Month Year]
-                </li>
+    <!-- Navigation (Desktop) -->
+    <nav id="desktop-nav">
+        <div class="logo">Renan Pinho</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#education">Educação</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
-        </section>
+        </div>
+    </nav>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
+    <!-- Mobile Navigation (Hamburger Menu) -->
+    <nav id="hamburger-nav">
+        <div class="logo">Renan Pinho</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Sobre mim</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Educação</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Habilidades</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/profile-pic.png" alt="Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Olá, eu sou</p>
+            <h1 class="title">Renan Pinho</h1>
+            <p class="section__text__p2">Estudante de Ciência da Computação</p>
+            <!-- Add buttons here if needed -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <p class="section__text__p1">Conheça mais detalhes</p>
+        <h2 class="title">Sobre mim</h2>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="assets/about-pic.jpg" alt="About Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <p class="text-container">
+                    <!-- Add about me content here -->
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis non nulla consectetur sollicitudin. Maecenas hendrerit risus vitae turpis faucibus bibendum. Donec sed dolor nec quam condimentum convallis. Ut efficitur, elit id molestie vehicula, enim purus convallis sem, sed venenatis dui magna vel nunc.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <p class="section__text__p1">Veja minha</p>
+        <h2 class="title">Educação</h2>
+        <div class="education-details-container">
+            <!-- Add education details here -->
+            <div class="education-item">
+                <h3>Universidade Federal de Pelotas</h3>
+                <p>Bacharelado em Ciência da Computação</p>
+                <p>Previsão de Formatura: [Mês Ano]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <p class="section__text__p1">Confira minhas</p>
+        <h2 class="title">Habilidades</h2>
+        <div class="skills-details-container">
+            <!-- Add skills details here -->
             <ul>
-                <li>Programming Languages: [List languages you're proficient in, e.g., Java, Python, C++]</li>
-                <li>Web Development: [HTML, CSS, JavaScript]</li>
-                <li>Database Management: [SQL]</li>
-                <li>Problem Solving</li>
-                <li>Teamwork</li>
-                <li>Communication Skills</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <!-- Add more skills as needed -->
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>Project 1: [Brief description, link to project if available]</li>
-                <li>Project 2: [Brief description, link to project if available]</li>
-                <li>Project 3: [Brief description, link to project if available]</li>
-            </ul>
-        </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <p class="section__text__p1">Veja alguns dos meus</p>
+        <h2 class="title">Projetos</h2>
+        <div class="projects-details-container">
+            <!-- Add projects details here -->
+            <div class="project-item">
+                <h3>Projeto 1</h3>
+                <p>Breve descrição do projeto.</p>
+            </div>
+            <div class="project-item">
+                <h3>Projeto 2</h3>
+                <p>Breve descrição do projeto.</p>
+            </div>
+            <!-- Add more project items as needed -->
+        </div>
+    </section>
 
-        <!-- Contact Information Section -->
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <ul>
-                <li>Email: [Your email address]</li>
-                <li>LinkedIn: [Your LinkedIn profile URL]</li>
-            </ul>
-        </section>
-    </main>
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section__text__p1">Entre em contato</p>
+        <h2 class="title">Contato</h2>
+        <div class="contact-details-container">
+            <!-- Add contact details here -->
+            <p>Email: renan@example.com</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/renan">Renan</a></p>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Renan. All rights reserved.</p>
+        <!-- Footer Navigation Links -->
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#education">Educação</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Footer Copyright -->
+        <p>&copy; 2024 Renan Pinho. Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>
