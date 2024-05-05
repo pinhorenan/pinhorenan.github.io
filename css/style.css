@@ -1,9 +1,13 @@
-@import 'partials/_sections.css';
+@import 'partials/_about.css';
+@import 'partials/_contact.css';
+@import 'partials/_education.css';
 @import 'partials/_footer.css';
-@import 'partials/_footer.css';
-@import 'partials/_footer.css';
-@import 'partials/_footer.css';
-
+@import 'partials/_header.css';
+@import 'partials/_nav.css';
+@import 'partials/_profile.css';
+@import 'partials/_projects.css';
+@import 'partials/_section.css';
+@import 'partials/_skills.css';
 
 /* Reset default margin and padding */
 * {
