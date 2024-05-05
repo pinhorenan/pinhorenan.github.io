@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renan's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/scripts.js" defer></script>
+    <script src="./scripts/smooth-scroll.js" defer></script>
+    <script src="https://kit.fontawesome.com/162e461e7c.js"></script>
 </head>
 <body>
     <!-- Navigation (Desktop) -->
@@ -44,7 +45,7 @@
 
     <!-- Profile Section -->
     <section id="profile">
-        <div class="section__pic-container">
+        <div id="profile-pic">
             <img src="assets/profile-pic.png" alt="Profile Picture">
         </div>
         <div class="section__text">
@@ -57,14 +58,11 @@
 
     <!-- About Section -->
     <section id="about">
-        <p class="section__text__p1">Conheça mais detalhes</p>
-        <h2 class="title">Sobre mim</h2>
+        <p class="section-pre-title">Conheça mais detalhes</p>
+        <h2 class="title">SOBRE MIM</h2>
         <div class="section-container">
-            <div class="section__pic-container">
-                <img src="assets/about-pic.jpg" alt="About Picture" class="about-pic">
-            </div>
             <div class="about-details-container">
-                <p class="text-container">
+                <p class="about-content">
                     <!-- Add about me content here -->
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis non nulla consectetur sollicitudin. Maecenas hendrerit risus vitae turpis faucibus bibendum. Donec sed dolor nec quam condimentum convallis. Ut efficitur, elit id molestie vehicula, enim purus convallis sem, sed venenatis dui magna vel nunc.
                 </p>
@@ -74,8 +72,8 @@
 
     <!-- Education Section -->
     <section id="education">
-        <p class="section__text__p1">Veja minha</p>
-        <h2 class="title">Educação</h2>
+        <p class="section-pre-title">Veja minha</p>
+        <h2 class="title">EDUCAÇÃO</h2>
         <div class="education-details-container">
             <!-- Add education details here -->
             <div class="education-item">
@@ -88,8 +86,8 @@
 
     <!-- Skills Section -->
     <section id="skills">
-        <p class="section__text__p1">Confira minhas</p>
-        <h2 class="title">Habilidades</h2>
+        <p class="section-pre-title">Confira minhas</p>
+        <h2 class="title">HABILIDADES</h2>
         <div class="skills-details-container">
             <!-- Add skills details here -->
             <ul>
@@ -107,50 +105,44 @@
 
     <!-- Projects Section -->
     <section id="projects">
-        <p class="section__text__p1">Veja alguns dos meus</p>
-        <h2 class="title">Projetos</h2>
+        <p class="section-pre-title">Veja alguns dos meus</p>
+        <h2 class="title">PROJETOS</h2>
+
         <div class="projects-details-container">
-            <!-- Add projects details here -->
-            <div class="project-item">
-                <h3>Projeto 1</h3>
-                <p>Breve descrição do projeto.</p>
+            <div class="project-items-container">
+                <div class="project-item">
+                    <a href=""><h3 class="project-title">"An Age of Mages with Low Wages"</h3></a>
+                    <p class="project-description">Breve descrição do projeto.</p>
+                </div>
+                <div class="project-item">
+                    <a href=""><h3 class="project-title">Projeto 2</h3></a>
+                    <p class="project-description">Breve descrição do projeto.</p>
+                </div>
             </div>
-            <div class="project-item">
-                <h3>Projeto 2</h3>
-                <p>Breve descrição do projeto.</p>
-            </div>
-            <!-- Add more project items as needed -->
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <p class="section__text__p1">Entre em contato</p>
-        <h2 class="title">Contato</h2>
+        <p class="section-pre-title">Entre em contato</p>
+        <h2 class="title">CONTATO</h2>
+
         <div class="contact-details-container">
-            <!-- Add contact details here -->
-            <p>Email: pinhorenan@icloud.com</p>
-            <p>Telefone: (xx) xxxx-xxxx</p>
-            <a href="https://linkedin.com/in/renan">LinkedIn</a>
-            <a href="https://github.com/pinhorenan">GitHub</a>
-            <a href="https//instagram.com/renan">Instagram</a>
+            <div class="contact-items-container">
+                    <a href="mailto:pinhorenan@icloud.com"><i class="fa-solid fa-envelope"> pinhorenan@icloud.com</i></a>
+                    <a href="https://wa.me/5553935051455"><i class="fa-brands fa-square-whatsapp"> (53) 93505-1455</i></a>
+                    <a href="https//instagram.com/naner_pinho"><i class="fa-brands fa-square-instagram"> pinho_naner</i></a>
+                </div>
+                <div class="contact-items-container">
+                    <a href="https://github.com/pinhorenan"><i class="fa-brands fa-square-github"> pinhorenan</i></a>
+                    <a href="https://twitter.com/pinhorenan"><i class="fa-brands fa-x-twitter"> pinhorenan</i></a>
+                    <a href="https://linkedin.com/in/pinhorenan"><i class="fa-brands fa-linkedin"> pinhorenan</i></a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <!-- Footer Navigation Links -->
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">Sobre mim</a></li>
-                    <li><a href="#education">Educação</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
         <!-- Footer Copyright -->
         <p>&copy; 2024 Renan Pinho. Todos os direitos reservados.</p>
     </footer>
