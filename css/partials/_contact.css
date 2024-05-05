@@ -1,0 +1,33 @@
+/* Contact Section styles */
+#contact {
+    background: rgba(229, 255, 0, 0.5);
+    border-radius: 10px;
+    padding: 2rem 1rem;
+}
+
+.contact-details-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-items-container {
+    width: calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(229, 255, 0, 0.5);
+    border-radius: 10px;
+}
+
+.contact-items-container a,
+i {
+    margin-bottom: 0.5rem;
+}
+
+.contact-items-container a,
+i {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}

@@ -1,0 +1,10 @@
+/* Profile section styles */
+#profile-pic {
+    text-align: center;
+}
+
+#profile-pic img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}

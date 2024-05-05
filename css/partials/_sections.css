@@ -1,0 +1,20 @@
+/* Section styles */
+section {
+    padding: 1rem 1rem;
+    margin: 1rem 4rem;
+    background-color: rgba(183, 255, 0, 0.5);
+    border-radius: 10px;
+}
+
+.section-pre-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
