@@ -3,26 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renan's Portfolio</title>
+    <title>Renan Pinho</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="./scripts/smooth-scroll.js" defer></script>
+    <script src="./scripts/hamburger-menu.js" defer></script>
+    <script src="./scripts/scroll-to-top.js" defer></script>
+    <script src="./scripts/language-toggle.js" defer></script>
+    <script src="./scripts/dark-mode.js" defer></script>
     <script src="https://kit.fontawesome.com/162e461e7c.js"></script>
 </head>
 <body>
+    <div id="content-en"> 
     <!-- Navigation (Desktop) -->
-    <nav id="desktop-nav">
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre mim</a></li>
-                <li><a href="#education">Educação</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
-
-  <!-- Mobile Navigation (Hamburger Menu)
+        <nav id="desktop-nav">
+            <div class="nav-items-container">
+                <ul class="nav-links">
+                    <li>
+                        <a href="#about">About me</a>
+                    </li>
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projetcs</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-items-container">
+                <ul class="nav-buttons">
+                    <li>
+                        <button onclick="toggleLanguage()"><i class="fa-solid fa-language"></i> Português</i></button>
+                    </li>
+                    <li>
+                        <button onclick="toggleDarkMode()"><i class="fa-solid fa-circle-half-stroke"></i> Dark Mode</i></button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+    <!-- Mobile Navigation (Hamburger Menu)
     <nav id="hamburger-nav">
         <div class="logo">Renan Pinho</div>
         <div class="hamburger-menu">
@@ -40,95 +65,105 @@
             </div>
         </div>
     </nav>
-
---> 
+    
+    --> 
 
     <!-- Profile Section -->
-    <section id="profile">
-        <div id="profile-pic">
-            <img src="assets/profile-pic.png" alt="Profile Picture">
-        </div>
-        <div class="section__text">
-            <h3 class="greetings">Olá, eu sou</p>
-            <h1 class="title">Renan Pinho</h1>
-            <h2 class="subtitle">Estudante de Ciência da Computação</p>
-            <!-- Add buttons here if needed -->
-        </div>
-    </section>
-
+        <section id="profile">
+            <div id="profile-pic">
+                <img src="assets/profile-picture.jpg" alt="Profile Picture">
+            </div>
+            <div class="section__text">
+                <h3 class="greetings">Hello, I am</p>
+                <h1 class="title">Renan Pinho</h1>
+                <h2 class="subtitle">Computer Science Student</p>
+                    <!-- Add buttons here if needed -->
+                </div>
+        </section>
+        
     <!-- About Section -->
-    <section id="about">
-        <p class="section-pre-title">Conheça mais detalhes</p>
-        <h2 class="title">SOBRE MIM</h2>
-        <div class="section-container">
+        <section id="about">
+            <p class="section-pre-title">Know more about me</p>
+            <h2 class="title">ABOUT ME</h2>
+            <div class="section-container">
             <div class="about-details-container">
-                <p class="about-content">
+                    <p class="about-content">
                     <!-- Add about me content here -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis non nulla consectetur sollicitudin. Maecenas hendrerit risus vitae turpis faucibus bibendum. Donec sed dolor nec quam condimentum convallis. Ut efficitur, elit id molestie vehicula, enim purus convallis sem, sed venenatis dui magna vel nunc.
-                </p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis non nulla consectetur sollicitudin. Maecenas hendrerit risus vitae turpis faucibus bibendum. Donec sed dolor nec quam condimentum convallis. Ut efficitur, elit id molestie vehicula, enim purus convallis sem, sed venenatis dui magna vel nunc.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+        
     <!-- Education Section -->
-    <section id="education">
-        <p class="section-pre-title">Veja minha</p>
-        <h2 class="title">EDUCAÇÃO</h2>
-        <div class="education-details-container">
-            <!-- Add education details here -->
-            <div class="education-item">
-                <h3>Universidade Federal de Pelotas</h3>
-                <p>Bacharelado em Ciência da Computação</p>
-                <p>Previsão de Formatura: [Mês Ano]</p>
+        <section id="education">
+            <p class="section-pre-title">Check out my</p>
+            <h2 class="title">EDUCATION</h2>
+            <div class="education-details-container">
+                <!-- Add education details here -->
+                <div class="education-item">
+                    <h3>Universidade Federal de Pelotas</h3>
+                    <p>Bachelor's degree in Computer Science</p>
+                    <p>Estimated graduation date: [Year Month]</p>
+                </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+        
     <!-- Skills Section -->
-    <section id="skills">
-        <p class="section-pre-title">Confira minhas</p>
-        <h2 class="title">HABILIDADES</h2>
-        <div class="skills-details-container">
-            <!-- Add skills details here -->
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>C</li>
-                <li>Java</li>
-                <!-- Add more skills as needed -->
-            </ul>
-        </div>
-    </section>
+        <section id="skills">
+            <p class="section-pre-title">Check out my</p>
+            <h2 class="title">SKILLS</h2>
+            <div class="skills-container">
+                <div class="skills-details-container">
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>C</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div class="skills-details-container">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <p class="section-pre-title">Veja alguns dos meus</p>
-        <h2 class="title">PROJETOS</h2>
+        <section id="projects">
+            <p class="section-pre-title">Take a look at some of my</p>
+            <h2 class="title">PROJECTS</h2>
 
-        <div class="projects-details-container">
-            <div class="project-items-container">
-                <div class="project-item">
-                    <a href=""><h3 class="project-title">"An Age of Mages with Low Wages"</h3></a>
-                    <p class="project-description">Breve descrição do projeto.</p>
+            <div class="projects-details-container">
+                <div class="project-items-container">
+                    <div class="project-item">
+                        <a href="https://github.com/pinhorenan/DungeonClash"><h3 class="project-title">"Dungeon Clash"</h3></a>
+                        <p class="project-description">This is a code for a 2D game I made as a project at the university. It was made on the Object Oriented Programming discipline as a final project and I made a few changes after the end of the class just to make sure it works just fine. The project was made in collaboration with two colleagues, but once the semester ended I maintained it by myself. All details can be found on the README.md.</p>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/pinhorenan/pinhorenan.github.io"><h3 class="project-title">"This website"</h3></a>
+                        <p class="project-description">Here you can find the source-code for this website.</p>
+                    </div>
                 </div>
-                <div class="project-item">
-                    <a href=""><h3 class="project-title">Projeto 2</h3></a>
-                    <p class="project-description">Breve descrição do projeto.</p>
+                <div class="project-items-container">
+                    <div class="project-item">
+                        <a href="https://github.com/pinhorenan/Age-of-Mages-and-Low-Wages"><h3 class="project-title">"An Age of Mages with Low Wages"</h3></a>
+                        <p class="project-description">This is a project I started after the "Dungeon Clash" project. It aims to recriate the game using C++ instead of Java, mostly due to it's better performance and I started it since at the time I had no experience on C++.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    
     <!-- Contact Section -->
-    <section id="contact">
-        <p class="section-pre-title">Entre em contato</p>
-        <h2 class="title">CONTATO</h2>
-
-        <div class="contact-details-container">
-            <div class="contact-items-container">
+        <section id="contact">
+            <p class="section-pre-title">Get in touch</p>
+            <h2 class="title">CONTACT</h2>
+            
+            <div class="contact-details-container">
+                <div class="contact-items-container">
                     <a href="mailto:pinhorenan@icloud.com"><i class="fa-solid fa-envelope"> pinhorenan@icloud.com</i></a>
                     <a href="https://wa.me/5553935051455"><i class="fa-brands fa-square-whatsapp"> (53) 93505-1455</i></a>
                     <a href="https//instagram.com/naner_pinho"><i class="fa-brands fa-square-instagram"> pinho_naner</i></a>
@@ -137,14 +172,15 @@
                     <a href="https://github.com/pinhorenan"><i class="fa-brands fa-square-github"> pinhorenan</i></a>
                     <a href="https://twitter.com/pinhorenan"><i class="fa-brands fa-x-twitter"> pinhorenan</i></a>
                     <a href="https://linkedin.com/in/pinhorenan"><i class="fa-brands fa-linkedin"> pinhorenan</i></a>
+                </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    
     <!-- Footer -->
-    <footer>
-        <!-- Footer Copyright -->
-        <p>&copy; 2024 Renan Pinho. Todos os direitos reservados.</p>
-    </footer>
+        <footer id="footer">
+        <p>&copy; 2024 Renan Pinho. All rights reserved.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
