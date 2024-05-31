@@ -1,13 +1,13 @@
-@import url('partials/_about.css');
-@import url('partials/_contact.css');
-@import url('partials/_education.css');
-@import url('partials/_footer.css');
-@import url('partials/_header.css');
-@import url('partials/_nav.css');
-@import url('partials/_profile.css');
-@import url('partials/_projects.css');
-@import url('partials/_sections.css');
-@import url('partials/_skills.css');
+@import url('_about.css');
+@import url('_contact.css');
+@import url('_education.css');
+@import url('_footer.css');
+@import url('_header.css');
+@import url('_nav.css');
+@import url('_profile.css');
+@import url('_projects.css');
+@import url('_sections.css');
+@import url('_skills.css');
 
 /* Reset default margin and padding */
 * {
