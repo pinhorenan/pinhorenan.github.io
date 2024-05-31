@@ -5,7 +5,16 @@
     padding: 2rem 1rem;
 }
 
+#email-phone-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
 .contact-details-container {
+    padding: 0 1rem ;
     display: flex;
     justify-content: space-between;
 }
@@ -23,6 +32,7 @@
 .contact-items-container a,
 i {
     margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .contact-items-container a,

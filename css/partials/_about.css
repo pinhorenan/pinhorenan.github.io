@@ -6,6 +6,8 @@
 }
 
 .about-content {
+    margin: 1rem;
+    padding: 1rem;
     background: rgba(229, 255, 0, 0.5);
     border-radius: 10px;
     background-size: auto;

@@ -36,6 +36,32 @@ body {
     display: none;    
 }
 
+.edu-skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+}
+
+#education {
+    margin-right: 0;
+}
+
+#skills {
+    margin-left: 0;
+}
+
+#education, #skills {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem; /* Ajuste conforme necessário */
+}
+
+.education-details-container, .skills-container {
+    flex-grow: 1;
+}
+
 
 
 
