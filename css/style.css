@@ -14,7 +14,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 a {
@@ -55,7 +54,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem; /* Ajuste conforme necessário */
+    padding: 1rem;
 }
 
 .education-details-container, .skills-container {

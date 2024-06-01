@@ -13,12 +13,13 @@
     margin-left: auto;
 }
 
-.section_text {
+.section-text {
     padding: 1.5rem;
 }
 
 
 #profile-pic img {
+    margin: 1rem;
     max-width: 100%;
     height: auto;
     object-fit: cover;

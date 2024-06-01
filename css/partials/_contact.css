@@ -9,14 +9,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
-    width: 100%;
 }
 
 .contact-details-container {
     padding: 0 1rem ;
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .contact-items-container {
