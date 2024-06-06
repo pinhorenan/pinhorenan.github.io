@@ -8,6 +8,7 @@
 main {
     width: 100vw;
     margin: 0;
-    padding: 10vh 5vw;
+    align-items: center;
+    padding: 10vh 10vw;
     background-image: url(../assets/images/background.jpg);
 }
