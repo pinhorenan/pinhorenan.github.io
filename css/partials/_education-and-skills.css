@@ -1,6 +1,8 @@
 #section-edu-skills {
-    background-color: #dedede5f;
+    display: flex; /* Torna #section-projects um contêiner flexível */
+    flex-direction: column; /* Organiza os elementos em coluna */
     padding: 0;
+    height: 100vh; /* Ocupa toda a altura da viewport */
 }
 
 .titles-container {
@@ -19,12 +21,14 @@
     margin-bottom: 0;
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
 }
 .subsection {
     flex: 1;
-    width: 100%;
-    height: 60vh;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
     border-radius: 10px;
-    background-color: #dedede;
+    background-color: #DEDEDE2f;
 }

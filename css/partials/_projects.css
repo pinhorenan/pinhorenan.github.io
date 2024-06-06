@@ -1,25 +1,20 @@
 #section-projects {
-    background-color: #dedede5f;
+    display: flex; /* Torna #section-projects um contêiner flexível */
+    flex-direction: column; /* Organiza os elementos em coluna */
     padding: 0;
-}
-
-#projects-section-container {
-    width: 100%;
-    height: calc(100% - #projects-title-3);
-    padding: 0;
+    height: 100vh; /* Ocupa toda a altura da viewport */
 }
 
 #projects-title-h3 {
-    margin-left: 2.5vw;
     font-size: 2.5em;
-    padding: 2.5vh 0;
     color: #DEDEDE;
+    margin: 0;
+    padding: 20px; /* Adiciona um espaçamento interno */
 }
 
-#project-display {
-    width: 100%;
-    height: 100%;
+#projects-display {
+    flex: 1; /* Faz com que #projects-section-container ocupe o espaço restante */
     border-radius: 10px;
-    background-color: #9e06063f;
+    padding: 20px; /* Adiciona um espaçamento interno */
+    background-color: #DEDEDE2f;
 }
-
