@@ -1,0 +1,30 @@
+section {
+    width: 90vw;
+    height: 80vh;
+    margin-bottom: 10vh;
+    padding: 5vh;
+    border-radius: 10px;
+}
+
+#section-greetings {
+    background-color: #dedede5f;
+}
+
+#section-projects {
+    background-color: #dedede5f;
+    padding-left: 0;
+}
+
+#section-edu-skills {
+    background-color: #dedede5f;
+}
+
+#section-about {
+    background-color: #dedede;
+}
+
+#section-contact {
+    margin-bottom: 0;
+    background-color: #dedede;
+  }
+

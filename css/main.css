@@ -4,5 +4,11 @@
 @import url('partials/_profile.css');
 @import url('partials/_projects.css');
 @import url('partials/_skills.css');
-@import url('partials/_sections.css');
 @import url('partials/_greetings.css');
+
+main {
+    width: 100vw;
+    margin: 0;
+    padding: 10vh 5vw;
+    background-image: url(../assets/images/background.jpg);
+}
