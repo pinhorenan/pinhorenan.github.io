@@ -1,24 +1,7 @@
 section {
     width: 100%;
     height: 80vh;
-    margin-bottom: 10vh;
     padding: 5vh;
+    margin-bottom: 10vh;
     border-radius: 10px;
 }
-
-#section-projects {
-    background-color: #dedede5f;
-    padding-left: 0;
-}
-
-
-
-#section-about {
-    background-color: #dedede;
-}
-
-#section-contact {
-    margin-bottom: 0;
-    background-color: #dedede;
-  }
-

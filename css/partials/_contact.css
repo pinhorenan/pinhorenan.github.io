@@ -1,3 +1,8 @@
+#section-contact {
+    margin-bottom: 0;
+    background-color: #dedede;
+}
+
 #contact-container {
     display: flex;
     flex-direction: column;

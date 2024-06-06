@@ -1,3 +1,8 @@
+#section-edu-skills {
+    background-color: #dedede5f;
+    padding: 0;
+}
+
 .titles-container {
     display: flex;
     justify-content: space-around;
@@ -17,7 +22,7 @@
 }
 .subsection {
     flex: 1;
-    width: 60vw;
+    width: 100%;
     height: 60vh;
     margin: 0;
     border-radius: 10px;
