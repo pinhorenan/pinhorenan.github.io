@@ -1,12 +1,4 @@
-@import url('partials/sections/_about.css');
-@import url('partials/sections/_contact.css');
-@import url('partials/sections/_education.css');
-@import url('partials/sections/_profile.css');
-@import url('partials/sections/_projects.css');
-@import url('partials/sections/_skills.css');
-@import url('partials/sections/_sections.css');
-@import url('partials/sections/_greetings.css');
-@import url('body.css');
+@import url('main.css');
 @import url('header.css');
 @import url('footer.css');
 
@@ -15,4 +7,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../assets/images/background.jpg);
+}
+
+body a {
+    text-decoration: none;
 }

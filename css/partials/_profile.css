@@ -1,0 +1,23 @@
+#about-section-container {
+    display: flex;
+    flex-direction: line;
+    justify-content: space-between;
+}
+
+#about-left-container {
+    width: 50%;
+}
+
+#about-upperleft-container {
+    display: flex;
+    flex-direction: line;
+    justify-content: space-between;
+}
+
+#about-right-container {
+}
+
+#about-socials-container {
+    color: #1F5297;
+    font-size: 3rem;
+}
