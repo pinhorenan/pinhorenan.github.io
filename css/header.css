@@ -24,6 +24,7 @@ nav {
 nav a {
     text-decoration: none;
     color: #1F5297;
+    font-weight: bold;
     font-size: 1.5rem;
     padding: 0.625rem;
     transition: color 0.3s, font-size 0.3s; /* Adicionando transições suaves para cor e tamanho da fonte */

@@ -1,7 +1,6 @@
 @import url('partials/_about.css');
 @import url('partials/_contact.css');
 @import url('partials/_education-and-skills.css');
-@import url('partials/_profile.css');
 @import url('partials/_projects.css');
 @import url('partials/_greetings.css');
 
@@ -10,7 +9,7 @@ main {
     margin: 0;
     align-items: center;
     padding: 10vh 10vw;
-    background-image: url(../assets/images/background.jpg);
+    background-image: url(../assets/images/background-full2.png);
 }
 
 section {
