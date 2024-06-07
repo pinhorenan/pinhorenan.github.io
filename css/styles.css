@@ -1,17 +1,28 @@
-@import url('partials/_about.css');
-@import url('partials/_contact.css');
-@import url('partials/_education.css');
-@import url('partials/_footer.css');
-@import url('partials/_header.css');
-@import url('partials/_nav.css');
-@import url('partials/_profile.css');
-@import url('partials/_projects.css');
-@import url('partials/_sections.css');
-@import url('partials/_skills.css');
+@import url('scrollbutton.css');
+@import url('scrollbar.css');
+@import url('main.css');
+@import url('header.css');
+@import url('footer.css');
 
 /* Reset default margin and padding */
-* {
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+body a {
+    text-decoration: none;
 }

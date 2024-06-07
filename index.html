@@ -4,111 +4,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renan Pinho</title>
+    <title>Portfolio</title>
     
-    <link rel="icon" href="assets/favicon.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/svg/favicon.svg" type="svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <script src="./scripts/smooth-scroll.js" defer></script>
-    <script src="./scripts/hamburger-menu.js" defer></script>
-    <script src="./scripts/scroll-to-top.js" defer></script>
-    <script src="./scripts/language-toggle.js" defer></script>
-    <script src="./scripts/dark-mode.js" defer></script>
     <script src="https://kit.fontawesome.com/162e461e7c.js"></script>
+    <script src="./scripts/smooth-scroll.js" defer></script>
+    <script src="./scripts/scroll-to-top.js" defer></script>
+    <script src="./scripts/show-header.js" defer></script>
+    <script src="./scripts/hide-see-more.js" defer></script>
+
 </head>
 
 <body>
-    <header>
-        <nav id="header-navbar">
-            <a href=""></a>
+    <header class="header-hidden">
+        <nav>
+            <a href="#section-projects">PROJECTS</a>
+            <a href="#section-edu-skills">EDUCATION</a>
+            <a href="#section-edu-skills">SKILLS</a>
+            <a href="#section-about">ABOUT</a>
+            <a href="#section-contact">CONTACT</a>
         </nav>
     </header>
+
+    <button id="scrollToTopBtn" title="Go back to top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
 
     <main>
         <section id="section-greetings">
             <div id="greetings-container" class="section-container">
-                <div id="h1-greetings-container">
-                    <h1 class="main-greetings-text">HELLO!</h1>
-                    <h1 class="main-greetings-text">I'M LOREM</h1>
+                <div id="greetings-text-container">
+                    <div id="h1-greetings-container">
+                        <h1 class="main-greetings-text">HELLO!</h1>
+                    <h1 class="main-greetings-text">I'M RENAN</h1>
+                    </div>
+                    <div id="h2-greetings-container">
+                        <h2 class="sub-greetings-text">Lorem ipsum dolor sit amet</h2>
+                        <h2 class="sub-greetings-text">Faucibus diam faucibus</h2>
+                    </div>
                 </div>
-                <div id="h2-greetings-container">
-                    <h2 class="sub-greetings-text">Lorem ipsum dolor sit amet</h2>
-                    <h2 class="sub-greetings-text">Faucibus diam faucibus</h2>
-                </div>
-                <div id="drop-down-arrow">
-                    <h4 id="more-greetings-text">SEE MORE ABOUT ME</h4>
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <div id="drop-down-aux-bar"></div>
-                </div>
+
+                <a id="see-more-container" href="#section-projects">
+                    <div id="drop-down-arrow">
+                        <h4 id="see-more-text">SEE MORE ABOUT ME</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div id="drop-down-aux-bar"></div>
+                    </div>
+                </a>
             </div>
         </section>
         
         <section id="section-projects">
-            <div id="projects-section-container" class="section-container">
-                <h3 id="projects-title-h3">PROJECTS</h3>
-                <div id="project-items-grid">
-                    <div class="project-details-container">
-    
+            <h3 id="projects-title-h3">CHECK OUT SOME OF MY PROJECTS</h3>
+            <div id="projects-display">
+                <div id="project"></div>
+            </div>
+        </section>
+
+        <section id="section-edu-skills">
+            <div class="titles-container">
+                <h3 id="edu-title-h3">EDUCATION</h3>
+                <h3 id="skills-title-h3">SKILLS</h3>
+            </div>
+            <div class="subsection-container">
+                <div id="edu-container" class="subsection">
+                    <div id="education-container">
+                        <div class="education-details-container"></div>
+                    </div>
+                </div>
+        
+                <div id="skills-container" class="subsection">
+                    <div id="skills-section-container">
+                        <div class="education-details-container"></div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="section-education">
-            <div id="education-container" class="section-container">
-                <div id="cs-degree-container" class="education-details-container"></div>
-                <div class="education-details-container"></div>
-                <div class="education-details-container"></div>
-                <div class="education-details-container"></div>
-            </div>
-        </section>
-
-        <section id="section-skills">
-            <div id="skills-section-container" class="section-container">
-                <div class="skill-details-container"></div>
-            </div>
-        </section>
         
         <section id="section-about">
-            <div id="section-container" class="section-container">
-                <div id="left-side-container">
-                    <div id="upper-container">
+            <div id="about-section-container" class="section-container">
+                <div id="about-left-container">
+                    <div id="about-upperleft-container">
                         <h3 id="about-title-h3">ABOUT ME</h3>
                         <div id="about-socials-container">
                             <a id="about-github-link" href="https://github.com/pinhorenan">
                                 <i class="fa-brands fa-square-github"></i>
                             </a>
-
                             <a id="about-linkedin-link" href="https://www.linkedin.com/in/pinhorenan/">
                                 <i class="fa-brands fa-linkedin"></i>
+                            </a>
                         </div>
                     </div>
-
-                    <div id="bottom-container">
+                    <div id="about-bottomleft-container">
                         <div id="about-details-container">
-                            <p id="about-details-paragraph">Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae.</p>
+                            <p id="about-details-paragraph">Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae.</p>
                         </div>
                     </div>
                 </div>
-
-                <div id="right-side-container">
+                <div id="about-right-container">
                     <div id="picture-container">
-                        <img id="about-picture" src="assets/profile-pic.png" alt="A picture of Renan Pinho, he's a young white man, he has short dark hair and a full beard. He is smilling and behind him there is a beatiful scenario with a small waterfall.">
+                        <img id="about-picture" src="assets/images/profile-picture.jpg" alt="A picture of Renan Pinho, he's a young white man, he has short dark hair and a full beard. He is smiling and behind him there is a beautiful scenario with a small waterfall.">
                     </div>
-    
                     <div id="cv-download-container">
                         <a id="cv-download-link" href="assets/cv.pdf" download>
-                            <i class="fa-solid fa-download"></i>
+                            <i id="cv-download-icon" class="fa-solid fa-download"></i>
                             <p id="cv-download-text">DOWNLOAD CV</p>
                         </a>
                     </div>
-    
                 </div>
-            </div> 
+            </div>
         </section>
 
         <section id="section-contact">
             <div id="contact-container" class="section-container">
+                <h3 id="contact-title-h3">CONTACT</h3>
+                <div id="contact-form-container">
+                    <form id="contact-form">
+                        <input type="text" id="contact-name" name="name" placeholder="Name" required>
+                        <input type="email" id="contact-email" name="email" placeholder="Email" required>
+                        <textarea id="contact-message" name="message" placeholder="Message" required></textarea>
+                        <button id="contact-submit" type="submit">SEND</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -117,6 +139,7 @@
         <div id="footer-container">
             <div id="footer-copyright">
                 <p>&copy; 2024 Renan Pinho. All rights reserved.</p>
+                <p><a target="_blank" href="https://icons8.com/icon/F3hvjvZc3jEF/portfolium">Portfolium</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
             </div>
             <div id="footer-links">
                 <a id="link-email" href="mailto:pinhorenan@icloud.com">

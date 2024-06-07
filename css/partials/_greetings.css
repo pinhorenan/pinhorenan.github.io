@@ -1,0 +1,52 @@
+#greetings-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+#greetings-text-container{
+  color: #DEDEDE;
+  text-align: left;
+  margin-bottom: 11rem;
+}
+
+#h1-greetings-container {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#h2-greetings-container {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+#see-more-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #DEDEDE5f;
+  transition: opacity 0.2s ease-out; /* Adiciona a transição de fade-out */
+}
+
+#see-more-container.hidden {
+  opacity: 0; /* Define a opacidade para 0 para o efeito de fade-out */
+}
+
+#dropo-down-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#see-more-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
