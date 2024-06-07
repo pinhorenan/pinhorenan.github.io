@@ -1,15 +1,17 @@
 #greetings-container h1, h2, h4 {
   color: #DEDEDE;
-  font-weight: 300;
   text-align: left;
 }
+
 
 #h1-greetings-container {
   font-size: 4.5rem;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 #h2-greetings-container {
   font-size: 2rem;
   margin-bottom: 1rem;
+  font-weight: normal;
 }
