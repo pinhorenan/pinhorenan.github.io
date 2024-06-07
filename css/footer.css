@@ -9,13 +9,18 @@ footer {
     background-color: #DEDEDE;
 }
 
+footer a {
+    text-decoration: none;
+    color: #1F5297;
+}
+
 #footer-container {
     width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
+}s
 #footer-links {
     display: flex;
     margin-right: 5vw;
@@ -23,13 +28,12 @@ footer {
     gap: 1rem;
 }
 #footer-links a {
-    text-decoration: none;
     font-size: 1.5rem;
-    color: #1F5297;
 }
 #footer-copyright {
     margin-left: 5vw;
     margin-right: auto;
     font-size: 1rem;
+    line-height: 1.5;
     color: #1F5297;
 }
