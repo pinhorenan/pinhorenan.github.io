@@ -7,12 +7,8 @@ header {
     align-items: center;
     position: fixed; /* Fixar o header no topo */
     top: 0; /* Valor inicial de top */
-    transition: top 0.3s;
+    transition: top 0.3s, background-color 0.3s, color 0.3s; /* Adicionando transições suaves para top e cor de fundo */
     z-index: 1000; /* Garantir que o header fique acima de outros elementos */
-}
-
-.header-hidden {
-    top: -8vh; /* Ajustar conforme necessário para ocultar o header */
 }
 
 nav {
@@ -32,5 +28,18 @@ nav a {
 
 nav a:hover {
     color: #0E3D61; /* Mudança de cor ao passar o mouse */
-    font-size: 1.55rem; /* Aumento leve do tamanho da fonte ao passar o mouse */
+    font-size: 2rem; /* Aumento leve do tamanho da fonte ao passar o mouse */
+}
+
+.transparent-header {
+    background-color: transparent;
+}
+
+.transparent-header nav a {
+    color: #DEDEDE;
+}
+
+.transparent-header nav a:hover {
+    color: #f1f1f1;
+    font-size: 2rem;
 }

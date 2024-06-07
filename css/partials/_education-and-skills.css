@@ -2,7 +2,7 @@
     display: flex; /* Torna #section-projects um contêiner flexível */
     flex-direction: column; /* Organiza os elementos em coluna */
     padding: 0;
-    height: 100vh; /* Ocupa toda a altura da viewport */
+    height: 80vh; /* Ocupa toda a altura da viewport */
 }
 
 .titles-container {
