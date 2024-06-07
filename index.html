@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Renan's Portfolium</title>
     
     <link rel="icon" href="assets/svg/favicon.svg" type="svg">
     <link rel="stylesheet" href="css/styles.css">
@@ -13,20 +13,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/162e461e7c.js"></script>
-    <script src="./scripts/smooth-scroll.js" defer></script>
-    <script src="./scripts/scroll-to-top.js" defer></script>
-    <script src="./scripts/show-header.js" defer></script>
-    <script src="./scripts/hide-see-more.js" defer></script>
+    <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/scroll.js" defer></script>
 
 </head>
 
 <body>
-    <header class="header-hidden">
+    <header id="header" class="transparent-header">
         <nav>
-            <a href="#section-projects">PROJECTS</a>
+            <a href="#section-about">ABOUT</a>
             <a href="#section-edu-skills">EDUCATION</a>
             <a href="#section-edu-skills">SKILLS</a>
-            <a href="#section-about">ABOUT</a>
+            <a href="#section-projects">PROJECTS</a>
             <a href="#section-contact">CONTACT</a>
         </nav>
     </header>
@@ -40,16 +38,16 @@
             <div id="greetings-container" class="section-container">
                 <div id="greetings-text-container">
                     <div id="h1-greetings-container">
-                        <h1 class="main-greetings-text">HELLO!</h1>
+                        <h1 class="main-greetings-text">HELLO</h1>
                     <h1 class="main-greetings-text">I'M RENAN</h1>
                     </div>
                     <div id="h2-greetings-container">
-                        <h2 class="sub-greetings-text">I'm a tech enthusiast.</h2>
-                        <h2 class="sub-greetings-text">And I'm looking for oportunities.</h2>
+                        <h2 class="sub-greetings-text">A CS student and tech enthusiast</h2>
+                        <h2 class="sub-greetings-text">And I'm currently looking for <strong>oportunities</strong>.</h2>
                     </div>
                 </div>
 
-                <a id="see-more-container" href="#section-projects">
+                <a id="see-more-container" href="#section-about">
                     <div id="drop-down-arrow">
                         <h4 id="see-more-text">SEE MORE ABOUT ME</h4>
                         <i class="fa-solid fa-chevron-down"></i>
@@ -58,11 +56,39 @@
                 </a>
             </div>
         </section>
-        
-        <section id="section-projects">
-            <h3 id="projects-title-h3">CHECK OUT SOME OF MY PROJECTS</h3>
-            <div id="projects-display">
-                <div id="project"></div>
+
+        <section id="section-about">
+            <div id="about-section-container" class="section-container">
+                <div id="about-left-container">
+                    <div id="about-upperleft-container">
+                        <h3 id="about-title-h3">ABOUT ME</h3>
+                        <div id="about-socials-container">
+                            <a id="about-github-link" href="https://github.com/pinhorenan">
+                                <i class="fa-brands fa-square-github"></i>
+                            </a>
+                            <a id="about-linkedin-link" href="https://www.linkedin.com/in/pinhorenan/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="about-bottomleft-container">
+                        <div id="about-details-container">
+                            <p id="about-details-paragraph">Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae.</p>
+                        </div>
+                        <div id="cv-download-container">
+                            <a id="cv-download-link" href="assets/cv.pdf" download>
+                                <i id="cv-download-icon" class="fa-solid fa-download"></i>
+                                <p id="cv-download-text">DOWNLOAD CV</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="about-right-container">
+                    <div id="picture-container">
+                        <img id="about-picture" src="assets/images/profile-picture.jpg" alt="A picture of Renan Pinho, he's a young white man, he has short dark hair and a full beard. He is smiling and behind him there is a beautiful scenario with a small waterfall.">
+                    </div>
+                    
+                </div>
             </div>
         </section>
 
@@ -86,39 +112,13 @@
             </div>
         </section>
         
-        <section id="section-about">
-            <div id="about-section-container" class="section-container">
-                <div id="about-left-container">
-                    <div id="about-upperleft-container">
-                        <h3 id="about-title-h3">ABOUT ME</h3>
-                        <div id="about-socials-container">
-                            <a id="about-github-link" href="https://github.com/pinhorenan">
-                                <i class="fa-brands fa-square-github"></i>
-                            </a>
-                            <a id="about-linkedin-link" href="https://www.linkedin.com/in/pinhorenan/">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div id="about-bottomleft-container">
-                        <div id="about-details-container">
-                            <p id="about-details-paragraph">Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae.</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="about-right-container">
-                    <div id="picture-container">
-                        <img id="about-picture" src="assets/images/profile-picture.jpg" alt="A picture of Renan Pinho, he's a young white man, he has short dark hair and a full beard. He is smiling and behind him there is a beautiful scenario with a small waterfall.">
-                    </div>
-                    <div id="cv-download-container">
-                        <a id="cv-download-link" href="assets/cv.pdf" download>
-                            <i id="cv-download-icon" class="fa-solid fa-download"></i>
-                            <p id="cv-download-text">DOWNLOAD CV</p>
-                        </a>
-                    </div>
-                </div>
+        <section id="section-projects">
+            <h3 id="projects-title-h3">CHECK OUT SOME OF MY PROJECTS</h3>
+            <div id="projects-display">
+                <div id="project"></div>
             </div>
         </section>
+        
     </main>
     
     <footer>

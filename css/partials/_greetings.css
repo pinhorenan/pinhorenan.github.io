@@ -7,7 +7,7 @@
 #greetings-text-container{
   color: #DEDEDE;
   text-align: left;
-  margin-bottom: 11rem;
+  margin-bottom: 6rem;
 }
 
 #h1-greetings-container {
@@ -22,6 +22,7 @@
   font-weight: normal;
 }
 
+
 #see-more-container {
   display: flex;
   flex-direction: column;
@@ -31,11 +32,7 @@
   text-align: center;
   text-decoration: none;
   color: #DEDEDE5f;
-  transition: opacity 0.2s ease-out; /* Adiciona a transição de fade-out */
-}
-
-#see-more-container.hidden {
-  opacity: 0; /* Define a opacidade para 0 para o efeito de fade-out */
+  transition: color 0.3s, font-size 0.3s; 
 }
 
 #dropo-down-arrow {
@@ -47,6 +44,10 @@
 
 #see-more-text {
   font-size: 1.5rem;
-  font-weight: bold;
   margin-bottom: 1rem;
+}
+
+#see-more-container:hover {
+  color: #DEDEDE8f;
+  font-size: 2rem;
 }
