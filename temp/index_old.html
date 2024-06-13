@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renan's Portfolium</title>
     
-    <link rel="icon" href="assets/svg/favicon.svg" type="svg">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" target="_blank" href="assets/svg/favicon.svg" type="svg">
+    <link rel="stylesheet" target="_blank" href="css/styles.css">
+    <link rel="preconnect" target="_blank" href="https://fonts.googleapis.com">
+    <link rel="preconnect" target="_blank" href="https://fonts.gstatic.com" crossorigin>
+    <link target="_blank" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/162e461e7c.js"></script>
     <script src="./scripts/header.js" defer></script>
@@ -21,11 +21,11 @@
 <body>
     <header id="header" class="transparent-header">
         <nav>
-            <a href="#section-about">ABOUT</a>
-            <a href="#section-edu-skills">EDUCATION</a>
-            <a href="#section-edu-skills">SKILLS</a>
-            <a href="#section-projects">PROJECTS</a>
-            <a href="#section-contact">CONTACT</a>
+            <a target="_blank" href="#section-about">ABOUT</a>
+            <a target="_blank" href="#section-edu-skills">EDUCATION</a>
+            <a target="_blank" href="#section-edu-skills">SKILLS</a>
+            <a target="_blank" href="#section-projects">PROJECTS</a>
+            <a target="_blank" href="#section-contact">CONTACT</a>
         </nav>
     </header>
 
@@ -47,7 +47,7 @@
                     </div>
                 </div>
 
-                <a id="see-more-container" href="#section-about">
+                <a id="see-more-container" target="_blank" href="#section-about">
                     <div id="drop-down-arrow">
                         <h4 id="see-more-text">SEE MORE ABOUT ME</h4>
                         <i class="fa-solid fa-chevron-down"></i>
@@ -63,10 +63,10 @@
                     <div id="about-upperleft-container">
                         <h3 id="about-title-h3">ABOUT ME</h3>
                         <div id="about-socials-container">
-                            <a id="about-github-link" href="https://github.com/pinhorenan">
+                            <a id="about-github-link" target="_blank" href="https://github.com/pinhorenan">
                                 <i class="fa-brands fa-square-github"></i>
                             </a>
-                            <a id="about-linkedin-link" href="https://www.linkedin.com/in/pinhorenan/">
+                            <a id="about-linkedin-link" target="_blank" href="https://www.linkedin.com/in/pinhorenan/">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </div>
@@ -76,7 +76,7 @@
                             <p id="about-details-paragraph">Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae.</p>
                         </div>
                         <div id="cv-download-container">
-                            <a id="cv-download-link" href="assets/cv.pdf" download>
+                            <a id="cv-download-link" target="_blank" href="assets/cv.pdf" download>
                                 <i id="cv-download-icon" class="fa-solid fa-download"></i>
                                 <p id="cv-download-text">DOWNLOAD CV</p>
                             </a>
@@ -92,22 +92,20 @@
             </div>
         </section>
 
-        <section id="section-edu-skills">
-            <div class="titles-container">
+        <section id="studies">
+            <div id="education" class="subsection">
                 <h3 id="edu-title-h3">EDUCATION</h3>
-                <h3 id="skills-title-h3">SKILLS</h3>
-            </div>
-            <div class="subsection-container">
-                <div id="edu-container" class="subsection">
-                    <div id="education-container">
-                        <div class="education-details-container"></div>
-                    </div>
+                <div id="education-cards-container">
+                    <div class="education-card"></div>
                 </div>
-        
-                <div id="skills-container" class="subsection">
-                    <div id="skills-section-container">
-                        <div class="education-details-container"></div>
-                    </div>
+            </div>
+
+            <div id="studies-separation"></div>
+                    
+            <div id="skills" class="subsection">
+                <h3 id="skills-title-h3">SKILLS</h3>
+                <div id="skill-cards-container">
+                    <div class="skill-card"></div>
                 </div>
             </div>
         </section>
@@ -125,25 +123,25 @@
         <div id="footer-container">
             <div id="footer-copyright">
                 <p>&copy; 2024 Renan Pinho. All rights reserved.</p>
-                <p><a target="_blank" href="https://icons8.com/icon/F3hvjvZc3jEF/portfolium">Portfolium</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+                <p><a target="_blank" target="_blank" href="https://icons8.com/icon/F3hvjvZc3jEF/portfolium">Portfolium</a> icon by <a target="_blank" target="_blank" href="https://icons8.com">Icons8</a></p>
             </div>
             <div id="footer-links">
-                <a id="link-email" href="mailto:pinhorenan@icloud.com">
+                <a id="link-email" target="_blank" href="mailto:pinhorenan@icloud.com">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
-                <a id="link-whatsapp" href="https://wa.me/5553935051455">
+                <a id="link-whatsapp" target="_blank" href="https://wa.me/5553935051455">
                     <i class="fa-brands fa-square-whatsapp"></i>
                 </a>
-                <a id="link-github" href="https://github.com/pinhorenan">
+                <a id="link-github" target="_blank" href="https://github.com/pinhorenan">
                     <i class="fa-brands fa-square-github"></i>
                 </a>
-                <a id="link-linkedin" href="https://linkedin.com/in/pinhorenan">
+                <a id="link-linkedin" target="_blank" href="https://linkedin.com/in/pinhorenan">
                      <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a id="link-instagram" href="https//instagram.com/naner_pinho">
+                <a id="link-instagram" target="_blank" href="https//instagram.com/naner_pinho">
                     <i class="fa-brands fa-square-instagram"></i>
                 </a>
-                <a id="link-twitter" href="https://twitter.com/pinhorenan">
+                <a id="link-twitter" target="_blank" href="https://twitter.com/pinhorenan">
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
             </div>

@@ -1,4 +1,4 @@
-#projects {
+#projects .section-content {
     display: flex;
     flex-direction: column;
     justify-content: center;

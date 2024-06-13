@@ -1,14 +1,13 @@
 @import url('./sections/gretting.css');
 @import url('./sections/about.css');
-@import url('./sections/skills.css');
-@import url('./sections/education.css');
+@import url('./sections/studies.css');
 @import url('./sections/projects.css');
 @import url('./sections/contact.css');
 
 main {
     width: 100%;
-    gap: 100px;
-    padding: 150px 300px;
+    padding: 0 19.375rem;
+    padding-bottom: 20vh;
     justify-content: center;
     align-items: center;
     color: #dedede;
@@ -19,7 +18,41 @@ main {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
     width: 100%;
+    height: 100vh;
+    padding: 20vh 0;
+}
+
+.section-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.see-more-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4rem;
+    color: #DEDEDE5f;
+    font-size: 1rem;
+    gap: 5px;
+    transition: all 0.3s ease; /* Transição suave de 0.3 segundos */
+}
+
+.see-more-container:hover {
+    transform: scale(1.1); /* Aumenta em 10% o tamanho */
+    font-size: 1.1rem;
+    color: #DEDEDE;
+}
+
+.see-more-container:hover .fa-chevron-down {
+    font-size: 1.5rem; /* Ajusta o tamanho da seta para ser maior */
 }
 
 #scrollToTopBtn {

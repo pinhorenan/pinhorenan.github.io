@@ -1,0 +1,17 @@
+@import url('./education.css');
+@import url('./skills.css');
+
+#studies .section-content {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#studies-separation-bar {
+    width: 2px;
+    margin: 0 2rem;
+    height: 100%;
+    background-color: #dedede ;
+}
+
+
