@@ -1,7 +1,8 @@
+// Scroll to section
 function scrollToSection(id) {
   const section = document.querySelector(id);
   if (section) {
-    const offset = section.offsetTop - (window.innerHeight * 0.1);
+    const offset = section.offsetTop;
     window.scrollTo({
       top: offset,
       behavior: "smooth",
@@ -9,6 +10,7 @@ function scrollToSection(id) {
   }
 }
 
+// Smooth scroll
 function addSmoothScrollListener(selector) {
   document.querySelectorAll(selector).forEach((link) => {
     link.addEventListener("click", function (event) {
@@ -20,8 +22,9 @@ function addSmoothScrollListener(selector) {
 }
 
 addSmoothScrollListener("header a");
-addSmoothScrollListener("#see-more-container");
+addSmoothScrollListener(".see-more-container");
 
+// Back to top button
 window.addEventListener("scroll", function () {
   const scrollToTopBtn = document.getElementById("scrollToTopBtn");
   scrollToTopBtn.style.display = (window.scrollY > 20) ? "block" : "none";

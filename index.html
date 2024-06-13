@@ -1,154 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renan's Portfolium</title>
+    <title>Renan's Portfolio</title>
     
-    <link rel="icon" href="assets/svg/favicon.svg" type="svg">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <!-- Styles -->
+    <link rel="icon" target="_blank" href="static/svg/favicon.svg" type="svg">
+    <link rel="stylesheet" target="_blank" href="static/css/styles.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" target="_blank" href="https://fonts.googleapis.com">
+    <link rel="preconnect" target="_blank" href="https://fonts.gstatic.com" crossorigin>
+    <link target="_blank" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- FA Icons -->
     <script src="https://kit.fontawesome.com/162e461e7c.js"></script>
-    <script src="./scripts/header.js" defer></script>
-    <script src="./scripts/scroll.js" defer></script>
 
+    <!-- Scripts -->
+    <script src="static/scripts/header.js" defer></script>
+    <script src="static/scripts/scroll.js" defer></script>
 </head>
-
 <body>
     <header id="header" class="transparent-header">
         <nav>
-            <a href="#section-about">ABOUT</a>
-            <a href="#section-edu-skills">EDUCATION</a>
-            <a href="#section-edu-skills">SKILLS</a>
-            <a href="#section-projects">PROJECTS</a>
-            <a href="#section-contact">CONTACT</a>
+            <a href="#about">ABOUT</a>
+            <a href="#studies">EDUCATION</a>
+            <a href="#studies">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
         </nav>
     </header>
 
-    <button id="scrollToTopBtn" title="Go back to top">
+    <button id="scrollToTopBtn" title="Back to top">
         <i class="fa fa-arrow-up"></i>
     </button>
 
     <main>
-        <section id="section-greetings">
-            <div id="greetings-container" class="section-container">
-                <div id="greetings-text-container">
-                    <div id="h1-greetings-container">
-                        <h1 class="main-greetings-text">HELLO</h1>
-                    <h1 class="main-greetings-text">I'M RENAN</h1>
-                    </div>
-                    <div id="h2-greetings-container">
-                        <h2 class="sub-greetings-text">A CS student and tech enthusiast</h2>
-                        <h2 class="sub-greetings-text">And I'm currently looking for <strong>oportunities</strong>.</h2>
-                    </div>
-                </div>
-
-                <a id="see-more-container" href="#section-about">
-                    <div id="drop-down-arrow">
-                        <h4 id="see-more-text">SEE MORE ABOUT ME</h4>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <div id="drop-down-aux-bar"></div>
-                    </div>
-                </a>
+        <section id="gretting">
+            <div id="gretting-text">
+                <h1>HELLO</h1>
+                <h1>I'M RENAN</h1>
+                <h2>A <strong>CS student</strong> and tech enthusiast</h2>
+                <h2>I'm currently looking for <strong>oportunities</strong>.</h2>
             </div>
+            
+            <a href="#about" class="see-more-container">
+                <h4>SEE MORE ABOUT ME</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+                <div id="drop-down-aux-bar"></div>
+            </a>
         </section>
 
-        <section id="section-about">
-            <div id="about-section-container" class="section-container">
-                <div id="about-left-container">
-                    <div id="about-upperleft-container">
-                        <h3 id="about-title-h3">ABOUT ME</h3>
-                        <div id="about-socials-container">
-                            <a id="about-github-link" href="https://github.com/pinhorenan">
+        <section id="about">
+            <div class="section-content">
+                <div id="about-left">
+                    <div id="about-title">
+                        <h2>ABOUT ME</h2>
+                        <div id="about-icons">
+                            <a target="_blank" href="https://github.com/pinhorenan">
                                 <i class="fa-brands fa-square-github"></i>
                             </a>
-                            <a id="about-linkedin-link" href="https://www.linkedin.com/in/pinhorenan/">
+                            <a target="_blank" href="https://www.linkedin.com/in/pinhorenan/">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
-                    <div id="about-bottomleft-container">
-                        <div id="about-details-container">
-                            <p id="about-details-paragraph">Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae. Lorem ipsum dolor sit amet consectetur. Diam interdum nisl vestibulum gravida. Ullamcorper libero faucibus nulla suscipit egestas sit lobortis vitae.</p>
+                    <div id="about-details">
+                        <p>LOREM IPSUM DOLOR SIT AMET CONSECTUR. DIAM INTERDUM NISL VESTIBULUM GRAVIDA. ULLAMCORPER LIBERO FAUCIBUS NULLA SUSCIPIT EGESTAS SIT LOBORTIS VITAE. ALIQUAM ANTE CONSECTUR NISL ODIO.</p>
+                    </div>
+                </div>
+                <div id="about-right">
+                    <img id="profile-picture" src="static/images/profile-picture.jpg" alt="A picture of Renan Pinho, he's a young white man, he has short dark hair and a full beard. He is smiling and behind him there is a beautiful scenario with a small waterfall.">
+                    <div id="download-container">
+                        <a href="assets/cv.pdf">DOWNLOAD CV</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#studies" class="see-more-container">
+                <h4>CHECK OUT WHAT I'VE BEEN STUDYING</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+                <div id="drop-down-aux-bar"></div>
+            </a>   
+        </section>
+
+        <section id="studies">
+            <div class="section-content">
+                <div id="education">
+                    <h3>EDUCATION</h3>
+                    <div id="education-cards-container">
+                        <div class="education-card">
+                            <h5>FEDERAL UNIVERSITY OF PELOTAS</h4>
+                            <p>Computer Science</p>
+                            <p>2022 - 2026</p>
                         </div>
-                        <div id="cv-download-container">
-                            <a id="cv-download-link" href="assets/cv.pdf" download>
-                                <i id="cv-download-icon" class="fa-solid fa-download"></i>
-                                <p id="cv-download-text">DOWNLOAD CV</p>
-                            </a>
+                        <div class="education-card">
+                            <h5>ENGLISH CERTIFICATION</h5>
+                            <p>TOEFL</p>
+                        </div>
+                        <div class="education-card">
+                            <h5>ENGLISH CERTIFICATION</h5>
+                            <p>IELTS</p>
                         </div>
                     </div>
                 </div>
-                <div id="about-right-container">
-                    <div id="picture-container">
-                        <img id="about-picture" src="assets/images/profile-picture.jpg" alt="A picture of Renan Pinho, he's a young white man, he has short dark hair and a full beard. He is smiling and behind him there is a beautiful scenario with a small waterfall.">
+                <div id="studies-separation-bar"></div>
+                <div id="skills">
+                    <h3>SKILLS</h3>
+                    <div id="skill-cards-container">
+                        <div class="skill-card">
+                            <h4>JAVA</h4>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>C#</h4>
+                            <p>Basic</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>C/C++</h4>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>JAVASCRIPT</h4>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>HTML5</h4>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>CSS3</h4>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>PYTHON</h4>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>POSTGRESQL</h4>
+                            <p>Basic</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>RUST</h4>
+                            <p>Basic</p>
+                        </div>
                     </div>
-                    
                 </div>
+            </div>
+            <a href="#projects" class="see-more-container">
+                <h4>NOW TAKE A LOOK AT SOME OF MY PERSONAL PROJECTS</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+                <div id="drop-down-aux-bar"></div>
+            </a> 
+        </section>
+
+        <section id="projects">
+            <div class="section-content">
+                <div id="projects-display">
+                    <div class="project-container">
+                        <div class="project-top">
+                            <h3 class="project-title">Dungeon Clash</h3>
+                            <div class="project-techs">
+                                <div class="tech-container"><p>JAVA</p></div>
+                                <div class="tech-container"><p>OOP</p></div>
+                                <div class="tech-container"><p>JAVAFX</p></div>
+                            </div>
+                        </div>
+                        <div class="project-bottom">
+                            <p class="project-description">Dungeon Clash is a project developed for the Object-Oriented Programming course at the Federal University of Pelotas. The project's main objective is the implementation of a basic RPG system, inspired by famous tabletop RPGs like Dungeons & Dragons. </p>
+                            <img class="project-picture" src="static/images/project-picture.png">
+                        </div>
+                    </div>
+                </div>
+                <a href="#contact" class="see-more-container">
+                    <h4>NOW, IF YOU WANT TO REACH ME</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div id="drop-down-aux-bar"></div>
+                </a> 
             </div>
         </section>
 
-        <section id="section-edu-skills">
-            <div class="titles-container">
-                <h3 id="edu-title-h3">EDUCATION</h3>
-                <h3 id="skills-title-h3">SKILLS</h3>
-            </div>
-            <div class="subsection-container">
-                <div id="edu-container" class="subsection">
-                    <div id="education-container">
-                        <div class="education-details-container"></div>
-                    </div>
+        <section id="contact">
+            <h2>GET IN TOUCH WITH ME</h2>
+            <div id="contact-cards-container">
+                <div class="contact-card">
+                    <a target="_blank" href="https://wa.me/5553935051455">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                        <p id="phone-number">+55 (53)93505-1455</p>
+                    </a>
                 </div>
-        
-                <div id="skills-container" class="subsection">
-                    <div id="skills-section-container">
-                        <div class="education-details-container"></div>
-                    </div>
+                <div class="contact-card">
+                    <a target="_blank" href="mailto:pinhorenan@outlook.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p id="email">pinhorenan@icloud.com</p>
+                    </a>
                 </div>
             </div>
         </section>
-        
-        <section id="section-projects">
-            <h3 id="projects-title-h3">CHECK OUT SOME OF MY PROJECTS</h3>
-            <div id="projects-display">
-                <div id="project"></div>
-            </div>
-        </section>
-        
     </main>
-    
+
     <footer>
-        <div id="footer-container">
-            <div id="footer-copyright">
-                <p>&copy; 2024 Renan Pinho. All rights reserved.</p>
-                <p><a target="_blank" href="https://icons8.com/icon/F3hvjvZc3jEF/portfolium">Portfolium</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
-            </div>
-            <div id="footer-links">
-                <a id="link-email" href="mailto:pinhorenan@icloud.com">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a id="link-whatsapp" href="https://wa.me/5553935051455">
-                    <i class="fa-brands fa-square-whatsapp"></i>
-                </a>
-                <a id="link-github" href="https://github.com/pinhorenan">
-                    <i class="fa-brands fa-square-github"></i>
-                </a>
-                <a id="link-linkedin" href="https://linkedin.com/in/pinhorenan">
-                     <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a id="link-instagram" href="https//instagram.com/naner_pinho">
-                    <i class="fa-brands fa-square-instagram"></i>
-                </a>
-                <a id="link-twitter" href="https://twitter.com/pinhorenan">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-            </div>
+        <div id="footer-copyright">
+            © 2024 Renan Pinho. All rights reserved.
+        </div>
+
+        <div id="footer-links">
+            <a target="_blank" href="mailto:pinhorenan@outlook.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a target="_blank" href="https://wa.me/5553935051455">
+                <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+            <a target="_blank" href="https://github.com/pinhorenan"> 
+                <i class="fa-brands fa-square-github"></i>
+            </a>
+            <a target="_blank" href="https://linkedin.com/in/pinhorenan">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a target="_blank" href="https://instagram.com/naner_pinho">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a target="_blank" href="https://twitter.com/pinhorenan">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
         </div>
     </footer>
 </body>
-
 </html>

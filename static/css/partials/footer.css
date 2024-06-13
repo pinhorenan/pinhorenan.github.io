@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 25px 310px;
+    justify-content: space-between;
+    align-items: center;
+    color: #1F5297;
+}
+
+#footer-copyright {
+    color: #1F5297;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#footer-links {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
