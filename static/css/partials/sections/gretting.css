@@ -1,0 +1,52 @@
+#gretting {
+    height: 600px;
+    padding: 40px 0px;
+    gap: 20px;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+#gretting-text {
+    text-align: left;
+}
+
+#gretting-text h1 {
+    color: #DEDEDE;
+    font-family: Montserrat;
+    font-size: 6rem;
+    font-style: bold;
+    font-weight: 900;
+    line-height: 100%; /* 10rem */
+}
+
+#gretting-text h2 {
+    color: #DEDEDE;
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+#see-more-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: auto;
+    color: #DEDEDE5f;
+    font-size: 1rem;
+    gap: 5px;
+    transition: all 0.3s ease; /* Transição suave de 0.3 segundos */
+}
+
+#see-more-container:hover {
+    transform: scale(1.1); /* Aumenta em 10% o tamanho */
+    font-size: 1.1rem;
+    color: #DEDEDE;
+}
+
+#see-more-container:hover .fa-chevron-down {
+    font-size: 1.5rem; /* Ajusta o tamanho da seta para ser maior */
+}
+

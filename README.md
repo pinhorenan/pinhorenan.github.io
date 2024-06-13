@@ -13,6 +13,6 @@ Este é um projeto pessoal e atualmente não estou aceitando contribuições ext
 ## Contato
 
 Para entrar em contato comigo, você pode me encontrar nas seguintes plataformas:
+
 - [LinkedIn](https://www.linkedin.com/in/pinhorenan/)
 - [E-mail](pinhorenan@icloud.com)
-

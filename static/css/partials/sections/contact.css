@@ -1,0 +1,8 @@
+#contact {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+}
