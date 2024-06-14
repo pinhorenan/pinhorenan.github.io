@@ -37,6 +37,11 @@
 
 .contact-card i {
     font-size: 3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-card:hover i {
+    scale: 1.1;
 }
 
 .contact-card p {
