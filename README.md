@@ -10,6 +10,8 @@ Este site contém informações sobre mim, meus projetos, habilidades, educaçã
 
 Tenho planos de também hospedar um blog pessoal para registrar minhas atividades no estudo e desenvolvimento e assuntos diversos sobre tecnologia.
 
+Melhorar a exibição de meus projetos pessoais. Criar páginas para os projetos mais relevantes de maneira a se encaixarem neste página.
+
 ## Como Contribuir
 
 Este é um projeto pessoal e atualmente não estou aceitando contribuições externas. No entanto, sinta-se à vontade para abrir uma issue se encontrar algum problema ou tiver alguma sugestão.
