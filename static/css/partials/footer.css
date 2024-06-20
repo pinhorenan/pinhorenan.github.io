@@ -5,11 +5,11 @@ footer {
     padding: 25px 310px;
     justify-content: space-between;
     align-items: center;
-    color: #1F5297;
+    color: #dedede;
 }
 
 #footer-copyright {
-    color: #1F5297;
+    color: #dedede;
     text-align: center;
     font-family: Montserrat;
     font-size: 1.2rem;
@@ -18,6 +18,6 @@ footer {
 }
 
 #footer-links {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     flex-shrink: 0;
 }
