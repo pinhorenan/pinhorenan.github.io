@@ -29,9 +29,4 @@
     padding: 2rem;
     border-radius: 15px;
     background-color: #dedede1f;
-    transition: all 0.3s ease-in-out;
-}
-
-.education-card:hover {
-    background-color: #dedede3f;
 }

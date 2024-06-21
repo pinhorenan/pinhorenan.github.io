@@ -19,18 +19,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-#section-2-bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#section-2-bottom h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    text-align: center;
+    height: 40%;
 }
 
 #download-cv-container {
@@ -50,14 +39,16 @@
 
 #download-button-container {
     background-color: #DEDEDE1f;
+    border: 2px solid #DEDEDE;
     border-radius: 15px;
     padding: 1.625rem;
     font-size: 1.4rem;
     font-weight: bold;
-    transition: all 0.3s ease-in-out;
 }
 
-#download-button-container:hover {
-    background-color: #DEDEDE3f;
+#section-2-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60%;
 }
-
