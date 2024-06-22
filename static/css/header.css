@@ -7,7 +7,7 @@ header {
     align-items: center;
     position: fixed; /* Fixar o header no topo */
     top: 0; /* Valor inicial de top */
-    transition: top 0.3s, background-color 0.3s, color 0.3s; /* Adicionando transições suaves para top e cor de fundo */
+    transition: top 0.1s, background-color 0.1s, color 0.1s; /* Adicionando transições suaves para top e cor de fundo */
     z-index: 1000; /* Garantir que o header fique acima de outros elementos */
 }
 
@@ -23,7 +23,7 @@ nav a {
     font-weight: bold;
     font-size: 1.22rem;
     padding: 0.625rem;
-    transition: color 0.3s, font-size 0.3s; /* Adicionando transições suaves para cor e tamanho da fonte */
+    transition: color 0.1s, font-size 0.1s; /* Adicionando transições suaves para cor e tamanho da fonte */
 }
 
 nav a:hover {

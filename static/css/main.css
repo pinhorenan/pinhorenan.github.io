@@ -1,9 +1,6 @@
-@import url('./sections/gretting.css');
-@import url('./sections/about.css');
-@import url('./sections/studies.css');
-@import url('./sections/projects.css');
-@import url('./sections/contact.css');
-@import url('./sections/section1.css');
+@import url('./partials/section1.css');
+@import url('./partials/section2.css');
+@import url('./partials/contact.css');
 
 main {
     width: 100%;
@@ -22,7 +19,7 @@ section {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    width: 100%;
+    min-width: 100%;
     height: 100vh;
     padding: 10vh 0;
 }
@@ -41,17 +38,17 @@ section {
     color: #DEDEDE5f;
     font-size: 1rem;
     gap: 5px;
-    transition: all 0.3s ease; /* Transição suave de 0.3 segundos */
+    transition: all 0.1s ease;
 }
 
 .see-more-container:hover {
-    transform: scale(1.1); /* Aumenta em 10% o tamanho */
+    transform: scale(1.1);
     font-size: 1.1rem;
     color: #DEDEDE;
 }
 
 .see-more-container:hover .fa-chevron-down {
-    font-size: 1.5rem; /* Ajusta o tamanho da seta para ser maior */
+    font-size: 1.5rem;
 }
 
 #scrollToTopBtn {
@@ -62,7 +59,7 @@ section {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #555;
+    background-color: #DEDEDE1f;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -71,6 +68,6 @@ section {
 }
 
 #scrollToTopBtn:hover {
-    background-color: #333;
+    background-color: #DEDEDE3f;
 }
 
