@@ -12,7 +12,7 @@ Tenho planos de também hospedar um blog pessoal para registrar minhas atividade
 
 Melhorar a exibição de meus projetos pessoais. Criar páginas para os projetos mais relevantes de maneira a se encaixarem neste página.
 
-Ainda falta a implementação de media queries
+Ainda falta a implementação de media queries.
 
 ## Como Contribuir
 
