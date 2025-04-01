@@ -1,0 +1,44 @@
+/* ==========================================================================
+   1. Estilos Gerais para Seções
+   ========================================================================== */
+   section {
+    max-width: 100px;
+    border-radius: var(--border-radius);
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.01);
+    padding: 3rem 2rem;
+    margin: 4rem auto;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--card-glow);
+    backdrop-filter: blur(6px);
+  }
+  
+  section h2 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: var(--primary);
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  /* ==========================================================================
+     2. Classes Utilitárias para Seções
+     ========================================================================== */
+  .no-border {
+    background: none;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    max-width: 1200px;
+    padding: 2rem 0;
+  }
+  
+  /* ==========================================================================
+     3. Footer
+     ========================================================================== */
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+  }
+  

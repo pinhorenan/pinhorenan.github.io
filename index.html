@@ -1,253 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark-mode">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renan's Portfolio</title>
-    
-    <!-- Styles -->
-    <link rel="icon" type="image/svg+xml" href="static/svg/favicon.svg">
-    <link rel="stylesheet" target="_blank" href="static/css/styles.css">
-    <link rel="stylesheet" target="_blank" href="static/css/main.css">
-    <link rel="stylesheet" target="_blank" href="static/css/footer.css">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" target="_blank" href="https://fonts.googleapis.com">
-    <link rel="preconnect" target="_blank" href="https://fonts.gstatic.com" crossorigin>
-    <link target="_blank" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <!-- FA Icons -->
-    <script src="https://kit.fontawesome.com/162e461e7c.js"></script>
-
-    <!-- Scripts -->
-    <script src="static/scripts/scroll.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renan Pinho | Portfólio</title>
+  
+  <!-- SEO -->
+  <meta name="description" content="Portfólio de Renan Pinho: projetos, habilidades e contato.">
+  <meta property="og:title" content="Renan Pinho Portfolio">
+  <meta property="og:description" content="Check out my projects, skills, and how to connect with me.">
+  <meta property="og:image" content="static/images/profile-picture.png">
+  <meta property="og:url" content="https://example.com">
+  
+  <!-- Fontes e Ícones -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/theme-dark.css" />
+  <link rel="stylesheet" href="css/layout-base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
-<body>
-    <img src="static/svg/big-wave.svg" alt="A blue wave vector that serves as part of the background." id="big-wave" class="svg-background">
-    <img src="static/svg/small-wave.svg" alt="A blue wave vector that serves as part of the background." id="small-wave" class="svg-background">
+<body> 
 
-    <!--<header id="header" class="transparent-header">
-        <nav>
-            <a href="#section-1">ABOUT</a>
-            <a href="#section-2">EDUCATION</a>
-            <a href="#section-2">SKILLS</a>
-            <a href="#section-2">PROJECTS</a>
-            <a href="#contact">CONTACT</a>
-        </nav>
-    </header>
-    !-->
+  <!-- Botão para alternar tema -->
+  <button id="themeToggleBtn" title="Toggle Theme">
+    <i class="fas fa-adjust"></i>
+  </button>
 
-    <button id="scrollToTopBtn" title="Back to top">
-        <i class="fa fa-arrow-up"></i>
-    </button>
+  <!-- Fundo com ondas -->
+  <div class="background-wave">
+    <img src="static/svg/big-wave.svg" alt="wave" class="wave wave-big" />
+    <img src="static/svg/small-wave.svg" alt="wave" class="wave wave-small" />
+  </div>
 
-    <main>
-        <section id="section-1">
-            <div id="section-1-upper">
-                <div id="gretting">
-                    <h1>HELLO</h1>
-                    <h1>I'M RENAN</h1>
-                    <h2>A <strong>CS student</strong> and tech enthusiast.</h2>
-                    <h2>I'm currently looking for <strong>oportunities</strong>.</h2>
-                    
-                </div>
-                <div id="profile-picture-container">
-                    <img id="profile-picture" src="static/images/profile-picture.jpg" alt="A picture of Renan Pinho, he's a young white man, he has short dark hair and a full beard. He is smiling and behind him there is a beautiful scenario with a small waterfall.">
-                </div>
-            </div>
-    
-            <div id="section-1-bottom">
-                <div id="about-title">
-                    <h2>ABOUT ME</h2>
-                </div>
+  <!-- Botão voltar ao topo -->
+  <button id="scrollToTopBtn" title="Back to top">↑</button>
 
-                <div id="about-details">
-                    <p>I'm 22 year old brazilian Computer Science student at Federal University of Pelotas. Passionate about tech and eager to grow, I’m looking for opportunities to apply my skills and contribute to innovative projects.</p>
-                </div>
-            </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about-skills">About &amp; Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <a class="see-more-container" href="#section-2" >
-                <h4>CHECK OUT WHAT I'VE BEEN DOING</h4>
-                <i class="fa-solid fa-chevron-down"></i>
-                <div id="drop-down-aux-bar"></div>
-            </a>   
-        </section>
-
-        <section id="section-2">
-            <div id="section-2-upper">
-                <div id="education">
-                    <h3>EDUCATION</h3>
-                    <div id="education-cards-container">
-                        <div class="education-card">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <h4>FEDERAL UNIVERSITY OF PELOTAS</h4>
-                            <p>Computer Science</p>
-                            <p>2022 - 2026</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="separation-bar"></div>
-
-                <div id="skills">
-                    <h3>SKILLS</h3>
-                    <div id="skill-cards-container">
-                        <div class="skill-card">
-                            <h4>JAVA</h4>
-                            <p>Intermediate</p>
-                        </div>
-                        <div class="skill-card">
-                            <h4>C/C++</h4>
-                            <p>Intermediate</p>
-                        </div>
-                        <div class="skill-card">
-                            <h4>JAVASCRIPT</h4>
-                            <p>Basic</p>
-                        </div>
-                        <div class="skill-card">
-                            <h4>HTML</h4>
-                            <p>Intermediate</p>
-                        </div>
-                        <div class="skill-card">
-                            <h4>CSS</h4>
-                            <p>Intermediate</p>
-                        </div>
-                        <div class="skill-card">
-                            <h4>PYTHON</h4>
-                            <p>Intermediate</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="separation-bar"></div>
-
-                <div id="socials-and-cv">
-                    <div id="section-2-socials-container">
-                        <h3>MY PROFILES</h3>
-                        <div id="social-icons-container">
-                            <a target="_blank" href="https://github.com/pinhorenan">
-                                <i class="fa-brands fa-square-github"></i>
-                            </a>
-                            <a target="_blank" href="https://www.linkedin.com/in/pinhorenan/">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div id="download-cv-container">
-                        <h3>GET MY CV AS A PDF</h3>
-                        <div id="download-button-container">
-                            <a href="static/documents/cv_renan_pinho.pdf">DOWNLOAD CV</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="section-2-bottom">
-                <h3>SOME OF MY PROJECTS</h3>
-                <div id="projects-display">
-                    <div class="project-container">
-                        <div class="project-top">
-                            <div class="project-title">
-                                <a target="_blank" href="https://github.com/pinhorenan/DungeonClash">DungeonClash</a>
-                            </div>
-                            <div class="project-techs">
-                                <div class="tech-container"><p>JAVA</p></div>
-                                <div class="tech-container"><p>OOP</p></div>
-                            </div>
-                        </div>
-        
-                        <div class="project-bottom">
-                            <p class="project-description">Dungeon Clash is a project developed for the Object Oriented Programming class. The project's main objective is the implementation of a basic RPG system, inspired by famous tabletop RPGs like Dungeons & Dragons. The game is very simple but applies a lot of OOP concepts. It is text based.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-container">
-                        <div class="project-top">
-                            <div class="project-title">
-                                <a target="_blank" href="https://github.com/pinhorenan/Age-of-Mages-and-Low-Wages">AMLW</a>
-                            </div>
-                            <div class="project-techs">
-                                <div class="tech-container"><p>C++</p></div>
-                                <div class="tech-container" id="wip-project-card" ><p>WIP</p></div>
-                            </div>
-                        </div>
-
-                        <div class="project-bottom">
-                            <p class="project-description">AMLW, short for "Age of Mages With Low Wages", is <strong>work-in-progress</strong> project. The idea is to develop a 3D game in C++. It was inspired by my previous game project in Java and my intentions in developing it is to further increase my C++ knowledge and start working with 3D engines.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-container">
-                        <div class="project-top">
-                            <div class="project-title">
-                                <a target="_blank" href="https://github.com/pinhorenan/pinhorenan.github.io">This Website</a>
-                            </div>
-                            
-                            <div class="project-techs">
-                                <div class="tech-container"><p>JS</p></div>
-                                <div class="tech-container"><p>HTML</p></div>
-                                <div class="tech-container"><p>CSS</p></div>
-                            </div>
-                        </div>
-
-                        <div class="project-bottom">
-                            <p class="project-description">Here you can find the GitHub repo for this website. I started working on it to practice my basic front-end skills and fullfill the need of having a page to display my portfolio. It is subject to future changes and to this point I learned a good amount of CSS and HTML while working on it. I also used the GitHub pages to have it online.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <a class="see-more-container" href="#contact" >
-                <h4>NOW IF YOU'D LIKE TO GET IN TOUCH</h4>
-                <i class="fa-solid fa-chevron-down"></i>
-                <div id="drop-down-aux-bar"></div>
-            </a> 
-        </section>
-
-        <section id="contact">
-            <h2>GET IN TOUCH WITH ME</h2>
-            <div id="contact-cards-container">
-                <div class="contact-card">
-                    <a target="_blank" href="https://wa.me/5553935051455">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </div>
-                <div class="contact-card">
-                    <a target="_blank" href="mailto:pinhorenan@outlook.com">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p id="email">pinhorenan@outlook.com</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div id="footer-copyright">
-            © 2024 Renan Pinho. All rights reserved.
+  <main>
+    <!-- HERO sem moldura -->
+    <section id="hero" class="no-border">
+      <div class="hero-container">
+        <div class="hero-left">
+          <h1>Renan</h1>
+          <h1>Pinho </h1>
+          <h2>CS Student &amp; Tech Enthusiast</h2>
         </div>
-
-        <div id="footer-links">
-            <a target="_blank" href="mailto:pinhorenan@outlook.com">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a target="_blank" href="https://wa.me/5553935051455">
-                <i class="fa-brands fa-square-whatsapp"></i>
-            </a>
-            <a target="_blank" href="https://github.com/pinhorenan"> 
-                <i class="fa-brands fa-square-github"></i>
-            </a>
-            <a target="_blank" href="https://linkedin.com/in/pinhorenan">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a target="_blank" href="https://instagram.com/naner_pinho">
-                <i class="fa-brands fa-square-instagram"></i>
-            </a>
-            <a target="_blank" href="https://twitter.com/pinhorenan">
-                <i class="fa-brands fa-x-twitter"></i>
-            </a>
+        <div class="hero-right">
+          <img src="static/images/profile-picture.png" alt="Renan Pinho" class="profile-pic"/>
+          <button class="btn-download" onclick="window.open('static/documents/cv_renan_pinho.pdf')">
+            Download CV
+          </button>
         </div>
-    </footer>
+      </div>
+    </section>
+
+    <!-- CONTAINER para About & Skills lado a lado em telas grandes -->
+    <div id="about-skills" class="about-skills-wrapper">
+      <!-- ABOUT sem moldura (à esquerda) -->
+      <section id="about" class="no-border about-section">
+        <h2>About Me</h2>
+        <p>
+          I’m a 22-year-old Brazilian Computer Science student at the Federal University of Pelotas.
+          Passionate about technology and problem-solving, I love exploring new languages, tools, and frameworks.
+          Currently seeking opportunities to apply my skills and work on innovative projects that can impact people's lives.
+        </p>
+      </section>
+
+      <!-- SKILLS com moldura (à direita) -->
+      <section id="skills" class="with-border skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fa-brands fa-java"></i>
+            <span>Java</span>
+            <span class="badge">Intermediate</span>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-code"></i>
+            <span>C/C++</span>
+            <span class="badge">Intermediate</span>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript</span>
+            <span class="badge">Basic</span>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-database"></i>
+            <span>PostgreSQL</span>
+            <span class="badge">Intermediate</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PROJECTS com moldura, ocupando largura inteira -->
+    <section id="projects" class="with-border">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img 
+            src="static/images/project_sicxesimulator.png" 
+            alt="SIC/XE Simulator" 
+            class="project-image" 
+          />
+          <h3>SIC/XE Simulator</h3>
+          <p>Assembly language simulator for the SIC/XE architecture, developed in Java.</p>
+          <a 
+            href="https://github.com/pinhorenan/Simulador_SIC-XE" 
+            target="_blank"
+          >
+            View on GitHub
+          </a>
+        </div>
+        <div class="project-card">
+          <img 
+            src="static/images/project_dungeonclash.jpg" 
+            alt="DungeonClash" 
+            class="project-image" 
+          />
+          <h3>DungeonClash</h3>
+          <p>Text-based RPG project using OOP in Java, inspired by Dungeons &amp; Dragons.</p>
+          <a 
+            href="https://github.com/pinhorenan/DungeonClash" 
+            target="_blank"
+          >
+            View on GitHub
+          </a>
+        </div>
+        <div class="project-card">
+          <img 
+            src="static/images/project_engine.jpg" 
+            alt="Graphics Engine" 
+            class="project-image"
+          />
+          <h3>Graphics Engine</h3>
+          <p>A simple game engine developed in Java.</p>
+          <a 
+            href="https://github.com/pinhorenan/JavaEngine" 
+            target="_blank"
+          >
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Renan Pinho</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/scroll.js"></script>
 </body>
 </html>

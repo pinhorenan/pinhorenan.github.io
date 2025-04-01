@@ -1,0 +1,75 @@
+/* A partir de 768px (tablets) */
+@media (min-width: 768px) {
+
+  /* Hero em duas colunas */
+  .hero-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hero-left {
+    align-self: flex-start; 
+  }
+  
+  .hero-right {
+    align-self: flex-end; 
+  }
+
+  /* About & Skills lado a lado */
+  .about-skills-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .about-section, 
+  .skills-section {
+    flex: 1;
+  }
+
+  /* Projects: grid com múltiplas colunas */
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* A partir de 992px */
+@media (min-width: 992px) {
+  /* Seções ou colunas adicionais, 
+     caso queira outras configurações 
+     nessa faixa */
+  
+  /* Exemplo: 
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  } 
+  */
+}
+
+/* A partir de 1024px */
+@media (min-width: 1024px) {
+  /* Seções extras ou padding específicos */
+
+  .hero {
+    padding: 6rem 2rem; 
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  #about {
+    padding: 2rem;
+  }
+}
+
+/* A partir de 1200px */
+@media (min-width: 1200px) {
+  section {
+    max-width: 1200px; 
+  }
+
+  main {
+    max-width: 1200px; 
+  }
+}

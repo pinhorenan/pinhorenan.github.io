@@ -1,0 +1,125 @@
+/* ==========================================================================
+   1. Container & Layout Principal
+   ========================================================================== */
+   main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    overflow: visible;
+  }
+  
+  /* ==========================================================================
+     2. Header e Navegação
+     ========================================================================== */
+  header {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(8px);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--card-glow);
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  nav a {
+    color: var(--text-light);
+    font-weight: 500;
+    transition: color var(--transition);
+  }
+  
+  nav a:hover {
+    color: var(--primary);
+  }
+  
+  /* ==========================================================================
+     3. Botões Globais
+     ========================================================================== */
+  #themeToggleBtn {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 999;
+    background: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--card-glow);
+    padding: 0.65rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background var(--transition);
+  }
+  
+  #themeToggleBtn:hover {
+    background: var(--accent);
+    color: #0f172a;
+  }
+  
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary);
+    color: #0f172a;
+    padding: 0.75rem 1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: none;
+    z-index: 999;
+    border: none;
+    transition: background var(--transition);
+  }
+  
+  #scrollToTopBtn:hover {
+    background: var(--accent);
+  }
+  
+  /* ==========================================================================
+     4. Background Waves
+     ========================================================================== */
+  .background-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .wave {
+    position: absolute;
+    left: -10vh;
+    width: 120%;
+  }
+  
+  .wave-big {
+    top: -300px;
+    z-index: 1;
+  }
+  
+  .wave-small {
+    top: -400px;
+    z-index: 2;
+    opacity: 1;
+  }
+  
+  @keyframes wave-anim {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10vh); }
+    100% { transform: translateX(0); }
+  }
+  
+  .wave-big {
+    animation: wave-anim 30s ease-in-out infinite;
+  }
+  
+  .wave-small {
+    animation: wave-anim 10s ease-in-out infinite reverse;
+  }
+  
