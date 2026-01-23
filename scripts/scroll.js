@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // -----------------------
-  //  Scroll suave
-  // -----------------------
   function scrollToSection(id) {
     const section = document.querySelector(id);
     if (section) {
@@ -26,9 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
   addSmoothScrollListener("header a");
   addSmoothScrollListener(".see-more-container");
 
-  // -----------------------
-  //  Botão "Back to top"
-  // -----------------------
   const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
   window.addEventListener("scroll", function () {

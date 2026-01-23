@@ -1,11 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-// -----------------------
-  //  Alternância de tema
-  // -----------------------
+
   const themeToggleBtn = document.getElementById("themeToggleBtn");
 
   function toggleTheme() {
-    // Alterna a classe no elemento <html> (document.documentElement)
     document.documentElement.classList.toggle('dark-mode');
     document.documentElement.classList.toggle('light-mode');
 
@@ -18,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   themeToggleBtn.addEventListener('click', toggleTheme);
 
-  // Define o tema conforme a preferência salva no localStorage
   const savedTheme = localStorage.getItem('preferredTheme');
   if (savedTheme === 'light') {
     document.documentElement.classList.remove('dark-mode');
